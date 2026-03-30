@@ -36,8 +36,8 @@ namespace G_NET_9_Adv02
                 printAction(product);
             }
         }
-   
-     
+
+
 
         // 3.2 Transform Products
         public static List<TResult> TransformProducts<TResult>(List<Product> products, Func<Product, TResult> transformFunc)
@@ -48,7 +48,7 @@ namespace G_NET_9_Adv02
         // 3.3 Filter Products
         public static List<Product> FilterProducts(List<Product> products, Predicate<Product> predicateFunc)
         {
-            
+
             return products.FindAll(predicateFunc);
         }
 

@@ -7,7 +7,7 @@ namespace G_NET_9_Adv02
         static void Main(string[] args)
         {
             Console.WriteLine("\n--- Task 01: Smart Product Search ---");
-           //ShopMastersCatalog catalog = new ShopMastersCatalog();
+            //ShopMastersCatalog catalog = new ShopMastersCatalog();
             // 1. All Electronics products
             List<Product> electronicsProducts = ShopMasters.SearchProducts(ShopMasters.catalog, p => p.Category == "Electronics");
             Console.WriteLine("\n--- Electronics ---");
@@ -58,7 +58,7 @@ namespace G_NET_9_Adv02
             }
 
             Console.WriteLine("\n--- Price Labels ---");
-            List<string> priceLabels = ShopMasters.TransformProducts(ShopMasters.   catalog, p => $"{p.Name}: {(p.Price > 100 ? "Expensive!" : "Affordable")}");
+            List<string> priceLabels = ShopMasters.TransformProducts(ShopMasters.catalog, p => $"{p.Name}: {(p.Price > 100 ? "Expensive!" : "Affordable")}");
             foreach (var item in priceLabels)
             {
                 Console.WriteLine(item);
